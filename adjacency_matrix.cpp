@@ -11,10 +11,10 @@ int main()
     int n,m;
     cin>>n>>m;
     for(int i=0;i<m;i++){
-         int u,v;
-         cin>>u>>v;
-         adjmat[u][v]=1;//directed
-         adjmat[v][u]=1;// undirected
+         int u,v,w;
+         cin>>u>>v>>w;
+         adjmat[u][v]=w;//directed
+         adjmat[v][u]=w;// undirected
     }
 
     for(int i=1;i<=n;i++){
